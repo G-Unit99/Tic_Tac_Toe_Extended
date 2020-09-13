@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/Board.cpp">
+			<Option target="Tic_Tac_Toe_Extended"/>
+		</Unit>
+		<Unit filename="C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/Board.h">
+			<Option target="Tic_Tac_Toe_Extended"/>
+		</Unit>
+		<Unit filename="C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/Player.cpp">
+			<Option target="Tic_Tac_Toe_Extended"/>
+		</Unit>
+		<Unit filename="C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/Player.h">
+			<Option target="Tic_Tac_Toe_Extended"/>
+		</Unit>
 		<Unit filename="C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/main.cpp">
 			<Option target="Tic_Tac_Toe_Extended"/>
 		</Unit>

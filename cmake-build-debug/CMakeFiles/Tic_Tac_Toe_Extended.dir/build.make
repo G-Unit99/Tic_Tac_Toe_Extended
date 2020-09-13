@@ -89,19 +89,49 @@ CMakeFiles/Tic_Tac_Toe_Extended.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tic_Tac_Toe_Extended.dir/main.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\main.cpp -o CMakeFiles\Tic_Tac_Toe_Extended.dir\main.cpp.s
 
+CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.obj: CMakeFiles/Tic_Tac_Toe_Extended.dir/flags.make
+CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.obj: ../Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Tic_Tac_Toe_Extended.dir\Player.cpp.obj -c C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\Player.cpp
+
+CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\Player.cpp > CMakeFiles\Tic_Tac_Toe_Extended.dir\Player.cpp.i
+
+CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\Player.cpp -o CMakeFiles\Tic_Tac_Toe_Extended.dir\Player.cpp.s
+
+CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.obj: CMakeFiles/Tic_Tac_Toe_Extended.dir/flags.make
+CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.obj: ../Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Tic_Tac_Toe_Extended.dir\Board.cpp.obj -c C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\Board.cpp
+
+CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\Board.cpp > CMakeFiles\Tic_Tac_Toe_Extended.dir\Board.cpp.i
+
+CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\Board.cpp -o CMakeFiles\Tic_Tac_Toe_Extended.dir\Board.cpp.s
+
 # Object files for target Tic_Tac_Toe_Extended
 Tic_Tac_Toe_Extended_OBJECTS = \
-"CMakeFiles/Tic_Tac_Toe_Extended.dir/main.cpp.obj"
+"CMakeFiles/Tic_Tac_Toe_Extended.dir/main.cpp.obj" \
+"CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.obj" \
+"CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.obj"
 
 # External object files for target Tic_Tac_Toe_Extended
 Tic_Tac_Toe_Extended_EXTERNAL_OBJECTS =
 
 Tic_Tac_Toe_Extended.exe: CMakeFiles/Tic_Tac_Toe_Extended.dir/main.cpp.obj
+Tic_Tac_Toe_Extended.exe: CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.obj
+Tic_Tac_Toe_Extended.exe: CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.obj
 Tic_Tac_Toe_Extended.exe: CMakeFiles/Tic_Tac_Toe_Extended.dir/build.make
 Tic_Tac_Toe_Extended.exe: CMakeFiles/Tic_Tac_Toe_Extended.dir/linklibs.rsp
 Tic_Tac_Toe_Extended.exe: CMakeFiles/Tic_Tac_Toe_Extended.dir/objects1.rsp
 Tic_Tac_Toe_Extended.exe: CMakeFiles/Tic_Tac_Toe_Extended.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Tic_Tac_Toe_Extended.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\gerry\CLionProjects\Tic_Tac_Toe_Extended\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Tic_Tac_Toe_Extended.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Tic_Tac_Toe_Extended.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
