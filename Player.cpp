@@ -13,6 +13,7 @@ Player::Player(string name, int wins, int losses, int draws, char piece)
     Wins = wins;
     Losses = losses;
     Draws = draws;
+    Piece = piece;
 }
 
 //============
@@ -56,6 +57,11 @@ void Player::Set_Draws(int draws)
     Draws = Draws + draws;
 }
 
+void Player::Set_Piece(char piece)
+{
+    Piece = piece;
+}
+
 //=================
 //Accesor Functions
 //=================
@@ -73,6 +79,8 @@ void Player::Print_Name()
 //=======================================
 void Player::Print_First_Name(string name)
 {
+    name[0] = toupper(name[0]);
+
     for(int i = 0; i < name.size();i++){
 
         if (name[i] != ' '){
@@ -81,6 +89,25 @@ void Player::Print_First_Name(string name)
 
         else if (name[i] == ' '){
             break;
+        }
+    }
+}
+
+void Player::Print_Last_Name(string name)
+{
+    int a;
+    a = name.find(' ');
+
+    for(int i = (a+1); i < name.size();i++){
+
+        if (i == (a+1)){
+            name[i] = toupper(name[i]);
+            cout << name[i];
+        }
+
+        else {
+            name[i] = tolower(name[i]);
+            cout << name[i];
         }
     }
 }

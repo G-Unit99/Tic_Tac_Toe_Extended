@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<string>
+#include <cctype>
 using namespace std;
 
 class Player{
@@ -11,6 +12,7 @@ private:
     int Wins;
     int Losses;
     int Draws;
+    char Piece;
 
 public:
 //=================
@@ -22,11 +24,13 @@ public:
     void Set_Wins(int);
     void Set_Losses(int);
     void Set_Draws(int);
+    void Set_Piece(char);
 //=================
-//Accesor Functions
+//Accessor Functions
 //=================
     void Print_Name();
     void Print_First_Name(string);
+    void Print_Last_Name(string);
     void Print_Wins();
     void Print_Losses();
     void Print_Draws();

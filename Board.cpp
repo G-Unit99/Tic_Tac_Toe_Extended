@@ -19,22 +19,23 @@ Board::~Board()
 //===========================
 //Function to set the board
 //===========================
-char* Board:: Set_Board(char*pieces)
+char* Board:: Set_Board(int rows, int columns)
 {
-    char * new_Board = new char[9];
-    new_Board = pieces;
+    Rows = rows;
+    Columns = columns;
+    Gameboard = new char*[Rows];
 
-    *(pieces + 0) = '1';
-    *(pieces + 1) = '2';
-    *(pieces + 2) = '3';
-    *(pieces + 3) = '4';
-    *(pieces + 4) = '5';
-    *(pieces + 5) = '6';
-    *(pieces + 6) = '7';
-    *(pieces + 7) = '8';
-    *(pieces + 8) = '9';
+    for (int i = 0; i < Rows; i++){
+        Gameboard[i] = new char[Columns];
+    }
 
-    return new_Board;
+    for (int i = 0; i < Rows; i++){
+        for (int j = 0; j < Columns; j++){
+            Gameboard[i][j] = '0';
+        }
+    }
+
+    return *Gameboard;
 }
 
 //=============================

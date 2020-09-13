@@ -1,6 +1,6 @@
 //================================================================================================================================
-//This Program is a tic tac toe game that allows for two users to play the game
-//Player one is X and Player two is O
+//This Program is a tic tac toe game that allows for at least two users, but up to 7 users to play the game
+//Player pieces go from a - g
 //At the end of each game the players will be prompted to start another game or end the program
 //Each new game will carry over the results of each player from the previous game, but once the program exits, the data is erased
 //=================================================================================================================================
@@ -98,7 +98,7 @@ int main() {
             if (turn == 0){
 
                 if (game_moves == 0 || game_moves % 2 == 0 ){
-                    player_one.Print_First_Name(first_player_name);
+                    player_one.Print_Last_Name(first_player_name);
                     board.Change_Board(game_board,'x');
                     game_moves = game_moves + 1;
 
