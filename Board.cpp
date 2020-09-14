@@ -41,7 +41,7 @@ char* Board:: Set_Board(int rows, int columns)
 //=============================
 //Function to print the board
 //=============================
-void Board::Print_Board(char* pieces)
+void Board::Print_Board()
 {
     cout<< endl;
     int count = 0;
@@ -132,22 +132,67 @@ void Board::Print_Board(char* pieces)
 //==============================
 //Function to change the board
 //==============================
-char* Board:: Change_Board(char*pieces, char game_piece)
-{
-    char * new_Board = new char[9];
-    new_Board = pieces;
-    int position;
+char* Board:: Change_Board(char*pieces, char game_piece) {
+    char *new_Board;
+    new_Board = *Gameboard;
+    string position;
+    int x = 0;
+    int y = 0;
+    char rows[11] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'};
+    int columns[15] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
 
     cout << ", where do you want to move?:" << endl;
     cin >> position;
+    //implement  code to see if input is valid
+    if (position.length() == 3) {
 
-    for (int i = 0; i < position; i++ ){
-        if (i == (position-1)) {
-            *(pieces + i) = game_piece;
-        }
+            y = stoi(position.substr(1, 2)) -1;
+    }
+    else {
+            y = stoi(position.substr(1)) - 1;
     }
 
-    return new_Board;
+
+    if ( position[0] == rows[0] || position[0] == toupper(rows[0])){
+            x = 0;
+        }
+    else if ( position[0] == rows[1] || position[0] == toupper(rows[1])) {
+            x = 1;
+    }
+    else if ( position[0] == rows[2] || position[0] == toupper(rows[2])) {
+            x = 2;
+    }
+    else if ( position[0] == rows[3] || position[0] == toupper(rows[3])) {
+            x = 3;
+    }
+    else if ( position[0] == rows[4] || position[0] == toupper(rows[4])) {
+            x = 4;
+    }
+    else if ( position[0] == rows[5] || position[0] == toupper(rows[5])) {
+            x = 5;
+    }
+    else if ( position[0] == rows[6] || position[0] == toupper(rows[6])) {
+            x = 6;
+    }
+    else if ( position[0] == rows[7] || position[0] == toupper(rows[7])) {
+            x = 7;
+    }
+    else if ( position[0] == rows[8] || position[0] == toupper(rows[8])) {
+            x = 8;
+    }
+    else if ( position[0] == rows[9] || position[0] == toupper(rows[9])) {
+            x = 9;
+    }
+    else if ( position[0] == rows[10] || position[0] == toupper(rows[10])) {
+            x = 10;
+    }
+    else{
+            cout<<"Invalid Input"<< endl;
+
+    }
+
+    Gameboard[x][y] = game_piece;
+    return *Gameboard;
 }
 
 //=============================

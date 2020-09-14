@@ -7,13 +7,9 @@
 //=============
 //Constructor
 //=============
-Player::Player(string name, int wins, int losses, int draws, char piece)
+Player::Player()
 {
-    Name = name;
-    Wins = wins;
-    Losses = losses;
-    Draws = draws;
-    Piece = piece;
+
 }
 
 //============
@@ -77,8 +73,10 @@ void Player::Print_Name()
 //=======================================
 //Function to print player's first name
 //=======================================
-void Player::Print_First_Name(string name)
+void Player::Print_First_Name()
 {
+    string name;
+    name = Name;
     name[0] = toupper(name[0]);
 
     for(int i = 0; i < name.size();i++){
@@ -93,8 +91,10 @@ void Player::Print_First_Name(string name)
     }
 }
 
-void Player::Print_Last_Name(string name)
+void Player::Print_Last_Name()
 {
+    string name;
+    name = Name;
     int a;
     a = name.find(' ');
 
@@ -134,6 +134,10 @@ void Player::Print_Losses()
 void Player::Print_Draws()
 {
     cout << Draws;
+}
+
+char Player::Get_Piece() {
+    return Piece;
 }
 
 

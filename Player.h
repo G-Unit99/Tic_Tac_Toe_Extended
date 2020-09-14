@@ -18,7 +18,7 @@ public:
 //=================
 //Mutator Functions
 //=================
-    Player(string,int,int,int,char);
+    Player();
     ~Player();
     void Set_Name(string);
     void Set_Wins(int);
@@ -28,9 +28,10 @@ public:
 //=================
 //Accessor Functions
 //=================
+    char Get_Piece();
     void Print_Name();
-    void Print_First_Name(string);
-    void Print_Last_Name(string);
+    void Print_First_Name();
+    void Print_Last_Name();
     void Print_Wins();
     void Print_Losses();
     void Print_Draws();
