@@ -35,7 +35,10 @@ int main() {
     int game_moves;
     int turn = 3;
     int game_winner = 3;
-    char game_board[9] = {'1','2','3','4','5','6','7','8','9'};
+    int rows = 4;
+    int columns = 6;
+    char*game_board = board.Set_Board(rows,columns);
+
 
     board.Print_Board(game_board);
     cout << endl;
@@ -239,7 +242,7 @@ int main() {
 
         board.winner = false;
         game_moves = 0;
-        board.Set_Board(game_board);
+        board.Set_Board(rows,columns);
         board.Print_Board(game_board);
         cout << endl;
         cout << "Would you like to play again?:(Y/N)" << endl;

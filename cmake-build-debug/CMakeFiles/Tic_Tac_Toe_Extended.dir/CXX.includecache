@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/Player.cpp
+C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/Board.h
 Player.h
 C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/Player.h
 
@@ -17,4 +17,8 @@ string
 -
 cctype
 -
+
+C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/main.cpp
+Board.h
+C:/Users/gerry/CLionProjects/Tic_Tac_Toe_Extended/Board.h
 

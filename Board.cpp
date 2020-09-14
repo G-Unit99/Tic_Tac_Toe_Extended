@@ -45,29 +45,61 @@ void Board::Print_Board(char* pieces)
 {
     cout<< endl;
     int count = 0;
+    int column = 0;
+    char letter[11] = {'A','B','C','D','E','F','G','H','I','J','K'};
 
-    for (int i = 0; i < 3; i++){
+    while(column < Columns) {
+        cout << "    "<< (column + 1) << " ";
+        column = column + 1;
+    }
+     cout << endl;
 
-        cout << "+---+---+---+" << endl << "|";
+    for (int i = 0; i < Rows; i++){
 
-        for (int j = 0 ; j <3; j++){
+        column = 0;
+        while(column < Columns){
+            cout << "   ---";
+            column = column + 1;
+        }
+
+        cout<< endl;
+        cout <<letter[count] << " :";
+
+        for (int j = 0 ; j < (Columns ); j++){
+
 
             if (count == 0){
-                cout << ' ' << *(pieces + j) << ' ' << "|";
+                cout << ' ' << *(pieces) << "  :";
             }
 
             else if (count == 1){
-                cout << ' ' << *(pieces  + 3 + j) << ' ' << "|";
+                cout << ' ' << *(pieces) << "  :";
             }
 
             else {
-                cout << ' ' << *(pieces + 6 + j) << ' ' << "|";
+                cout << ' ' << *(pieces) << "  :";
             }
+            cout <<" ";
         }
+        cout << letter[count];
         cout << endl;
         count = count + 1;
+
     }
-    cout << "+---+---+---+" << endl;
+
+    column = 0;
+    while(column < Columns){
+        cout << "   ---";
+        column = column + 1;
+    }
+
+    column = 0;
+    cout << endl;
+    while(column < Columns) {
+        cout << "    " << (column + 1) << " ";
+        column = column + 1;
+    }
+    cout << endl;
 }
 
 //==============================
