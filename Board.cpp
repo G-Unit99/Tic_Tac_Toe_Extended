@@ -31,7 +31,7 @@ char* Board:: Set_Board(int rows, int columns)
 
     for (int i = 0; i < Rows; i++){
         for (int j = 0; j < Columns; j++){
-            Gameboard[i][j] = '0';
+            Gameboard[i][j] = ' ';
         }
     }
 
@@ -69,15 +69,42 @@ void Board::Print_Board(char* pieces)
 
 
             if (count == 0){
-                cout << ' ' << *(pieces) << "  :";
+                cout << ' ' << Gameboard[0][j] << "  :";
             }
 
             else if (count == 1){
-                cout << ' ' << *(pieces) << "  :";
+                cout << ' ' << Gameboard[1][j] << "  :";
+            }
+            else if (count == 2){
+                cout << ' ' << Gameboard[2][j] << "  :";
+            }
+            else if (count == 3){
+                cout << ' ' << Gameboard[3][j] << "  :";
+            }
+            else if (count == 4){
+                cout << ' ' << Gameboard[4][j] << "  :";
+            }
+            else if (count == 5){
+                cout << ' ' << Gameboard[5][j] << "  :";
+            }
+            else if (count == 6){
+                cout << ' ' << Gameboard[6][j] << "  :";
+            }
+            else if (count == 7){
+                cout << ' ' << Gameboard[7][j] << "  :";
+            }
+            else if (count == 8){
+                cout << ' ' << Gameboard[8][j] << "  :";
+            }
+            else if (count == 9){
+                cout << ' ' << Gameboard[9][j] << "  :";
+            }
+            else if (count == 10){
+                cout << ' ' << Gameboard[10][j] << "  :";
             }
 
             else {
-                cout << ' ' << *(pieces) << "  :";
+                cout << ' ' << Gameboard[11][j] << "  :";
             }
             cout <<" ";
         }
