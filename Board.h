@@ -15,7 +15,7 @@ public:
     bool winner = false;
     char *Set_Board(int,int);
     void Print_Board();
-    char *Change_Board(char*,char);
+    char *Change_Board(char*pieces, Player, char,string, bool);
     void Check_Board(char*, Player,char,string,bool);
 
 

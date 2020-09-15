@@ -29,6 +29,7 @@ public:
 //Accessor Functions
 //=================
     char Get_Piece();
+    string Get_Name();
     void Print_Name();
     void Print_First_Name();
     void Print_Last_Name();

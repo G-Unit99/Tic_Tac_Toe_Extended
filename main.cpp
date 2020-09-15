@@ -28,8 +28,8 @@ int main() {
     int turn = 0;
     int game_winner = 3;
     int players;
-    int rows = 4;
-    int columns = 6;
+    int rows = 11;
+    int columns = 15;
     char piece[7] = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
     char *game_board = board.Set_Board(rows, columns);
 
@@ -92,16 +92,30 @@ int main() {
         board.Set_Board(rows, columns);
         board.Print_Board();
         cout << endl;
+        game_moves = 0;
 
-        while (game_moves != (rows * columns)) {
+        while (game_moves != (rows * columns) ) {
 
-            for (int i = turn; i < players; i++) {
+            for (int i = 0; i < players; i++) {
                 a[i].Print_First_Name();
-                board.Change_Board(game_board,a[i].Get_Piece());
+                board.Change_Board(game_board,a[i],a[i].Get_Piece(),a[i].Get_Name(),win);
                 board.Print_Board();
+                game_moves = (game_moves +1);
+
+                if (game_moves == (rows*columns)){
+                    break;
+                }
+
+
             }
         }
+
+        cout << "Would you like to play again?:(Y/N)" << endl;
+        cin >> play_game;
     }
+    cout<< endl;
+    cout << "Hope you had fun! Goodbye. " << endl;
+
 /*
                 if (game_moves == 0 || game_moves % 2 == 0 ){
                     player_one.Print_Last_Name(first_player_name);
@@ -205,14 +219,11 @@ int main() {
         board.Set_Board(rows,columns);
         board.Print_Board(game_board);
         cout << endl;
-        cout << "Would you like to play again?:(Y/N)" << endl;
-        cin >> play_game;
+
 
 
     }
 
-    cout<< endl;
-    cout << "Hope you had fun! Goodbye. " << endl;
     */
 
 }

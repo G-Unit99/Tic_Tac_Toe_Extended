@@ -11,14 +11,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c76480-29ef-4362-8657-ea1f348c0cb6" name="Default Changelist" comment="Updates Board Object To Print Correctly">
+    <list default="true" id="99c76480-29ef-4362-8657-ea1f348c0cb6" name="Default Changelist" comment="Update Board Object To Change board correctly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Board.h" beforeDir="false" afterPath="$PROJECT_DIR$/Board.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Player.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/Board.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/Player.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tic_Tac_Toe_Extended.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tic_Tac_Toe_Extended.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tic_Tac_Toe_Extended.exe" afterDir="false" />
@@ -88,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600014901324</updated>
-      <workItem from="1600014902769" duration="64933000" />
+      <workItem from="1600014902769" duration="78964000" />
     </task>
     <task id="LOCAL-00001" summary="Start of project">
       <created>1600015005491</created>
@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600072563911</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update Board Object To Change board correctly">
+      <created>1600123709369</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600123709369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +143,8 @@
     <MESSAGE value="Updates Player Objects and 2d Array for board" />
     <MESSAGE value="Updates Board Object" />
     <MESSAGE value="Updates Board Object To Print Correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates Board Object To Print Correctly" />
+    <MESSAGE value="Update Board Object To Change board correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Board Object To Change board correctly" />
   </component>
   <component name="WindowStateProjectService">
     <state x="379" y="152" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600016291089">
@@ -151,22 +159,22 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="703" y="359" key="Github.ShareDialog/0.0.1707.920@0.0.1707.920" timestamp="1600015027037" />
-    <state width="498" height="241" key="GridCell.Tab.0.bottom" timestamp="1600123551055">
+    <state width="1664" height="501" key="GridCell.Tab.0.bottom" timestamp="1600139007043">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="498" height="241" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1600123551055" />
-    <state width="498" height="241" key="GridCell.Tab.0.center" timestamp="1600123551054">
+    <state width="1664" height="501" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1600139007043" />
+    <state width="1664" height="501" key="GridCell.Tab.0.center" timestamp="1600139007043">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="498" height="241" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1600123551054" />
-    <state width="498" height="241" key="GridCell.Tab.0.left" timestamp="1600123551054">
+    <state width="1664" height="501" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1600139007043" />
+    <state width="1664" height="501" key="GridCell.Tab.0.left" timestamp="1600139007043">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="498" height="241" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1600123551054" />
-    <state width="498" height="241" key="GridCell.Tab.0.right" timestamp="1600123551055">
+    <state width="1664" height="501" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1600139007043" />
+    <state width="1664" height="501" key="GridCell.Tab.0.right" timestamp="1600139007043">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="498" height="241" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1600123551055" />
+    <state width="1664" height="501" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1600139007043" />
     <state x="639" y="181" key="RollbackChangesDialog" timestamp="1600022123060">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -187,10 +195,10 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="1078" y="249" key="refactoring.ChangeSignatureDialog/0.0.1707.920@0.0.1707.920" timestamp="1600075609294" />
-    <state x="943" y="214" key="run.anything.popup" timestamp="1600039358844">
+    <state x="943" y="214" key="run.anything.popup" timestamp="1600148351959">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="943" y="214" key="run.anything.popup/0.0.1707.920@0.0.1707.920" timestamp="1600039358844" />
+    <state x="943" y="214" key="run.anything.popup/0.0.1707.920@0.0.1707.920" timestamp="1600148351959" />
     <state x="804" y="200" width="672" height="678" key="search.everywhere.popup" timestamp="1600059827667">
       <screen x="0" y="0" width="1707" height="920" />
     </state>

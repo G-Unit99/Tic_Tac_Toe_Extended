@@ -140,4 +140,8 @@ char Player::Get_Piece() {
     return Piece;
 }
 
+string Player::Get_Name() {
+    return Name;
+}
+
 

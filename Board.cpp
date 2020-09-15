@@ -49,8 +49,14 @@ void Board::Print_Board()
     char letter[11] = {'A','B','C','D','E','F','G','H','I','J','K'};
 
     while(column < Columns) {
-        cout << "    "<< (column + 1) << " ";
-        column = column + 1;
+        if (column >= 10){
+            cout << "  " << (column + 1) << "  ";
+            column = column + 1;
+        }
+        else {
+            cout << "    " << (column + 1) << " ";
+            column = column + 1;
+        }
     }
      cout << endl;
 
@@ -123,8 +129,14 @@ void Board::Print_Board()
     column = 0;
     cout << endl;
     while(column < Columns) {
-        cout << "    " << (column + 1) << " ";
-        column = column + 1;
+        if (column >= 10){
+            cout << "  " << (column + 1) << "  ";
+            column = column + 1;
+        }
+        else {
+            cout << "    " << (column + 1) << " ";
+            column = column + 1;
+        }
     }
     cout << endl;
 }
@@ -132,7 +144,7 @@ void Board::Print_Board()
 //==============================
 //Function to change the board
 //==============================
-char* Board:: Change_Board(char*pieces, char game_piece) {
+char* Board:: Change_Board(char*pieces, Player player, char game_piece, string name, bool win) {
     char *new_Board;
     new_Board = *Gameboard;
     string position;
@@ -190,8 +202,46 @@ char* Board:: Change_Board(char*pieces, char game_piece) {
             cout<<"Invalid Input"<< endl;
 
     }
-
     Gameboard[x][y] = game_piece;
+
+    //check wins
+
+    //check vertical
+    if (Gameboard[x][y] == game_piece && Gameboard[(x-1)][y] == game_piece && Gameboard[(x+1)][y] == game_piece){
+        player.Print_First_Name();
+        cout << " Wins";
+        player.Set_Wins(1);
+        Gameboard[x][y] = toupper(game_piece);
+        Gameboard[x][y] = toupper(game_piece);
+        Gameboard[x][y] = toupper(game_piece);
+        win = !win;
+        winner = win;
+    }
+
+    //Check horizontal
+    if(Gameboard[x][y] == game_piece && Gameboard[x][(y-1)] == game_piece && Gameboard[x][(y+1)] == game_piece){
+        player.Print_First_Name();
+        cout << " Wins";
+        player.Set_Wins(1);
+        Gameboard[x][y] = toupper(game_piece);
+        Gameboard[x][y] = toupper(game_piece);
+        Gameboard[x][y] = toupper(game_piece);
+        win = !win;
+        winner = win;
+    }
+
+    //check diagonal
+    if((Gameboard[x][y] == game_piece && Gameboard[(x-1)][(y-1)] == game_piece && Gameboard[(x+1)][(y+1)]) || (Gameboard[x][y] == game_piece && Gameboard[(x-1)][(y+1)] && Gameboard[(x+1)][(y-1)])){
+        player.Print_First_Name();
+        cout << " Wins";
+        player.Set_Wins(1);
+        Gameboard[x][y] = toupper(game_piece);
+        Gameboard[x][y] = toupper(game_piece);
+        Gameboard[x][y] = toupper(game_piece);
+        win = !win;
+        winner = win;
+    }
+
     return *Gameboard;
 }
 
@@ -200,7 +250,6 @@ char* Board:: Change_Board(char*pieces, char game_piece) {
 //=============================
 void Board::Check_Board(char* pieces, Player player,char game_piece,string name,bool win)
 {
-    win = false;
     //=======================
     //Check For Row For Wins
     //=======================
